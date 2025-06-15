@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    function loadTaks() {
+    function loadTasks() {
         const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
         const taskList = document.getElementById('task-list');
         taskList.innerHTML = '';
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }));
         localStorage.setItem('tasks', JSON.stringify(tasks));
     }
-    loadTaks();
+    loadTasks();
     const addButton = document.getElementById('add-task-btn');
     const taskList = document.getElementById('task-list');
     const taskInput = document.getElementById('task-input');
