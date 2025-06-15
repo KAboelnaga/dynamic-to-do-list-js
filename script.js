@@ -8,8 +8,8 @@ document.addEventListener('DOMContentLoaded', function() {
             const listItem = document.createElement('li');
             listItem.textContent = taskText;
             const deleteButton = document.createElement('button');
-            deleteButton.textContent = 'Delete';
-            deleteButton.className = 'remove-btn';
+            deleteButton.textContent = 'Remove';
+            deleteButton.classList.add('remove-btn');
             deleteButton.onclick = () => {
                 taskList.removeChild(listItem);
             };
